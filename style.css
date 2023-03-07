@@ -108,11 +108,11 @@ img {
 .left {
     float:left;
     width:23%;
-    background-color: aqua;
+    background-color: #61C5FF;
     padding: 30px;
 }
 
-.right {
+#firstRow .image {
     float:left;
     width:77%
 }
@@ -129,6 +129,44 @@ img {
     padding-top: 30px;
 }
 
+#secondRow .left {
+    background-color: #448AB3;
+}
+
+ .right {
+    float:left;
+    width:77%;
+    padding: 30px 30px 40px;
+    background-color: #F8F8FF;
+}
+
+#secondRow .inRight {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
+    row-gap: 20px;
+}
+
+#secondRow .inRight h3 {
+    padding-bottom: 5px;
+    color: #54728F;
+}
+
+#thirdRow .left {
+    background-color: #82A9BF;
+}
+
+#thirdRow .right {
+    background-color: #CFCFCF;
+}
+#thirdRow .right h3{
+    padding-bottom: 5px;
+    color: #54728F;
+}
+
+#thirdRow .right p {
+    padding-bottom: 10px;
+}
 @media only screen and (max-width: 670px) {
     header nav {
         display: none;
