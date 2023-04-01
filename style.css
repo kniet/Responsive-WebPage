@@ -228,6 +228,28 @@ footer a:hover {
     justify-content:space-between;
 }
 
+@media only screen and (max-width: 1024px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .image {
+        width: 100%;
+    }
+       
+    img {
+        display: block;
+    }
+
+    .right {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 670px) {
     header nav {
         display: none;
