@@ -40,7 +40,7 @@ header {
     color: #33b864;
 }
 
-ul {
+.normal-menu {
     list-style: none;
     height: 100%;
     display: flex;
@@ -48,11 +48,11 @@ ul {
     justify-content: space-around;
 }
 
-ul a {
+a {
     color:white;
 }
 
-ul li {
+.normal-menu li {
     padding: 7px;
 }
 
@@ -60,6 +60,8 @@ ul li {
     margin: auto 0;
     display: none;
     cursor: pointer;
+    background-color: black;
+    z-index: 5;
 }
 
 #hamburger-icon div {
@@ -95,6 +97,13 @@ ul li {
     top: 50px;
     left: 0;
     width: 100%;
+    background-color: gray;
+    list-style: none;
+    padding: 10px;
+}
+
+.mobile-menu li {
+    padding: 10px;
 }
 
 /*          main             */
@@ -146,7 +155,7 @@ img {
     background-color: #448AB3;
 }
 
- .right {
+.right {
     float:right;
     width: calc(100% - 390px);
     padding: 30px 30px 40px;
@@ -154,7 +163,7 @@ img {
 }
 
 #secondRow .inRight {
-    display: inline-grid;
+    display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 30px;
     row-gap: 20px;
@@ -229,10 +238,34 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 1024px) {
+    .left h1 {
+        font-size: 30px;
+    }
+
+    .left p {
+        font-size: 18px;
+    }
+
     .row {
         flex-direction: column;
     }
 
+    h3 {
+        font-size: 16px;
+    }
+
+    #secondRow .inRight .text {
+        font-size: 14px;
+    }
+
+    #thirdRow .right p {
+        font-size: 14px;
+    }
+
+    .footer-link {
+        font-size: 14px;
+    }
+    
     .left {
         width: 100%;
     }
@@ -251,6 +284,30 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 670px) {
+    .left h1 {
+        font-size: 25px;
+    }
+    
+    .left p {
+        font-size: 15px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    #secondRow .inRight .text {
+        font-size: 12px;
+    }
+
+    #thirdRow .right p {
+        font-size: 12px;
+    }
+
+    .footer-link {
+        font-size: 12px;
+    }
+
     header nav {
         display: none;
     }
@@ -259,7 +316,26 @@ footer a:hover {
         display: block;
     }
 
+    footer {
+        padding-top: 35px;
+    }
+
+    .footer-column {
+        padding-bottom: 25px;
+    }
+
+    .footer-heading {
+        margin-bottom: 10px;
+    }
+
     .footer-main {
         flex-direction: column;
     }
 }
+
+@media (max-width: 430px) {
+    #secondRow .inRight { 
+        display: flex;
+        flex-direction: column;
+    }
+  }
