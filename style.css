@@ -38,6 +38,7 @@ header {
 
 #pageName a {
     color: #33b864;
+    font-size: 22px;
 }
 
 .normal-menu {
@@ -65,15 +66,15 @@ a {
 }
 
 #hamburger-icon div {
-    width: 35px;
-    height: 5px;
-    background-color: white;
+    width: 30px;
+    height: 3px;
+    background-color: #E4E2DB;
     margin: 6px 0;
     transition: 0.4s;
 }
 
 .open .bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
+    transform: translate(0, 7px) rotate(-45deg);
 }
   
 .open .bar2 {
@@ -195,7 +196,7 @@ img {
 footer {
     background-color: #28282B;
     color: white;
-    padding: 60px 20px 10px 0px;
+    padding: 60px 20px 5px 0px;
 }
 
 footer a {
@@ -235,6 +236,15 @@ footer a:hover {
 .footer-bottom {
     display: flex;
     justify-content:space-between;
+    align-items: center;
+}
+
+.footer-go-up {
+    font-size:36px;
+}
+
+.copyright {
+    font-size: 15px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -264,6 +274,10 @@ footer a:hover {
 
     .footer-link {
         font-size: 14px;
+    }
+
+    .copyright {
+        font-size: 13px;
     }
     
     .left {
@@ -326,6 +340,10 @@ footer a:hover {
 
     .footer-heading {
         margin-bottom: 10px;
+    }
+
+    .copyright {
+        font-size: 11px;
     }
 
     .footer-main {
